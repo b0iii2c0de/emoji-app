@@ -4,10 +4,7 @@ import './AboutMe.css';
 
 const AboutMe = () => {
   return (
-    <div className="about">
-      <p>
-       Я человек простой. Вижу эмодзи - пишу ревью.
-      </p>
+    <div className="about-me">
       <ul className="links">
         <li>
           <Link to="my-story">My Story</Link>
