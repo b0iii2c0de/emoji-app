@@ -1,15 +1,19 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import './App.css';
 import Header from './Header';
 import Dashboard from './Dashboard';
 import Reviews from './Reviews';
 import AboutMe from './about-me/AboutMe';
-import AboutUs from './AboutUs';
-import './App.css';
+import AboutUs from './about-us/AboutUs';
+
 
 import MyStory from './about-me/MyStory';
 import Hobbies from './about-me/Hobbies';
 import Contact from './about-me/Contact';
+
+import SiteHistory from './about-us/SiteHistory';
+import SiteMission from './about-us/SiteMission';
 
 function App() {
   return (
@@ -23,7 +27,10 @@ function App() {
           <Route path="hobbies" element={<Hobbies />} />
           <Route path="contact" element={<Contact />} />
         </Route>
-        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/about-us" element={<AboutUs />}>
+          <Route path='site-history' element={<SiteHistory />} />
+          <Route path='site-mission' element={<SiteMission />} />
+        </Route>
       </Routes>
     </div>
   );

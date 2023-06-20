@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -9,9 +8,6 @@ const Dashboard = () => {
       <p>
         #1 среди авторов обзоров на эмодзи в этом году!
       </p>
-      <Link to="/reviews">
-        Tap to see latest reviews!  
-      </Link>
     </div>
   )
 }
