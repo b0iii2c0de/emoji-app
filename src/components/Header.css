@@ -1,0 +1,15 @@
+.header {
+  min-height: 70px;
+  border-bottom: 1px solid #000000;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  color: #437DFF;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+}
