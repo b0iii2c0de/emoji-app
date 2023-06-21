@@ -6,7 +6,7 @@ import Dashboard from './Dashboard';
 import Reviews from './Reviews';
 import AboutMe from './about-me/AboutMe';
 import AboutUs from './about-us/AboutUs';
-
+import PageNotFound from './PageNotFound';
 
 import MyStory from './about-me/MyStory';
 import Hobbies from './about-me/Hobbies';
@@ -31,6 +31,7 @@ function App() {
           <Route path='site-history' element={<SiteHistory />} />
           <Route path='site-mission' element={<SiteMission />} />
         </Route>
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );
